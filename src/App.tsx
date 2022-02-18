@@ -1,13 +1,7 @@
 import React, { Suspense } from 'react';
 import './App.css';
 import { Canvas as r3fCanvas } from '@react-three/fiber';
-import {
-  Backdrop,
-  Cloud,
-  PerspectiveCamera,
-  SpotLight,
-  Stage,
-} from '@react-three/drei';
+import { Backdrop, Cloud, SpotLight, Stage } from '@react-three/drei';
 import Logo from './components/Logo';
 import { Controls, withControls } from 'react-three-gui';
 import CustomCamera from './components/CustomCamera';

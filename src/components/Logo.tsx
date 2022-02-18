@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader';
 import { useControl } from 'react-three-gui';
-import { Cloud, PresentationControls } from '@react-three/drei';
+import { PresentationControls } from '@react-three/drei';
 
 const Logo: React.FC = () => {
   const svgData = useLoader(SVGLoader, '/gca-symbol.svg');

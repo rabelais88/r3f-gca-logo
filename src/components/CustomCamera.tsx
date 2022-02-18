@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { PerspectiveCamera } from '@react-three/drei';
+import React from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 
 const CustomCamera = () => {
