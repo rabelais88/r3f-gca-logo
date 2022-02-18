@@ -2,7 +2,7 @@ import * as T from 'three';
 import React, { useMemo } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader';
-import { useControl } from 'react-three-gui';
+// import { useControl } from 'react-three-gui';
 import { PresentationControls } from '@react-three/drei';
 
 const Logo: React.FC = () => {
@@ -11,18 +11,19 @@ const Logo: React.FC = () => {
     return svgData.paths.map((p) => p.toShapes(true));
   }, [svgData]);
 
-  const posX = useControl('logo - posX', {
-    type: 'number',
-    value: -0.65,
-    min: -100,
-    max: 100,
-  });
-  const posY = useControl('logo - posY', {
-    type: 'number',
-    value: 1,
-    max: 100,
-  });
-  const posZ = useControl('logo - posZ', { type: 'number', max: 100 });
+  // const posX = useControl('logo - posX', {
+  //   type: 'number',
+  //   value: -0.65,
+  //   min: -100,
+  //   max: 100,
+  // });
+  // const posY = useControl('logo - posY', {
+  //   type: 'number',
+  //   value: 1,
+  //   max: 100,
+  // });
+  // const posZ = useControl('logo - posZ', { type: 'number', max: 100 });
+  const [posX, posY, posZ] = [-0.65, 1, 0];
   return (
     <PresentationControls polar={[0, 0]}>
       <group>
